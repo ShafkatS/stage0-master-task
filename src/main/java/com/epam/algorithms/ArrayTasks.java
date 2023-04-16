@@ -46,6 +46,9 @@ public class ArrayTasks {
         }
         return -1;
     }
+    
+    public int[] getOnlyPositiveNumbers(int[] arr){
+    }
 
     /**
      * Return the new String[] array obtained from the arr array by reversing the order of the elements.
