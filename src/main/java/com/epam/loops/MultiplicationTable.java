@@ -10,7 +10,7 @@ public class MultiplicationTable {
     }
     
     public static void main(String[] args) {
-        Task1 t1 = new Task1();
+        MultiplicationTable t1 = new MultiplicationTable();
         t1.printTable(6);
     }
 
