@@ -11,9 +11,6 @@ public class NumberReverter {
         }
         System.out.println(value);
     }
-    public static void main(String[] args) {
-        NumberReverter n = new NumberReverter();
-        n.reverter(123456789);
-    }
+
 
 }
