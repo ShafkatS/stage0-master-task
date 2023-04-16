@@ -73,11 +73,11 @@ public class ArrayTasks {
      * <p>
      * arr = [1,-2, 3]      -> [1, 3] arr = [-1, -2, -3]   -> [] arr = [1, 2]         -> [1, 2]
      */
-    public int[] getOnlyPositiveNumbers(int[] arr) {
-        int[] arr = {5, -2, 4, 10, -22, 35, -14, 45};
+    public int[] getOnlyPositiveNumbers(int[] array) {
+        int[] array = {5, -2, 4, 10, -22, 35, -14, 45};
         int pos = 0;
         int neg = 0;
-        for (int x : arr) {
+        for (int x : array) {
             if (x > 0) {
                 pos++;
             } else {
@@ -90,7 +90,7 @@ public class ArrayTasks {
 
         int countpos = 0;
         int countneg = 0;
-        for (int x : arr) {
+        for (int x : array) {
             if (x > 0) {
                 arrpos[countpos] = x;
                 countpos++;
@@ -99,7 +99,7 @@ public class ArrayTasks {
                 countneg++;
             }
         }
-        return arr;
+        return arrpos;
     }
 
     /**
