@@ -21,9 +21,5 @@ public class DaysInMonth {
         }
 
     }
-    public static void main(String[] args) {
-        DaysInMonth t3 = new DaysInMonth();
-        t3.printDays(2020,2);
-    }
 
 }
