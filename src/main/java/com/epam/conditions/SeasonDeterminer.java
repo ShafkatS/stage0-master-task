@@ -12,7 +12,7 @@ public class SeasonDeterminer {
         else if (monthNumber == 6 || monthNumber == 7 || monthNumber == 8) {
             System.out.println("Summer");
         }
-        else if (monthNumber == 9 || monthNumber == 10 || monthNumberr == 11) {
+        else if (monthNumber == 9 || monthNumber == 10 || monthNumber == 11) {
             System.out.println("Autumn");
         }
         else System.out.println("Wrong month number");
