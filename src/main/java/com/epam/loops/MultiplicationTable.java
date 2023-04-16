@@ -8,10 +8,6 @@ public class MultiplicationTable {
             System.out.println(numberTableToPrint + "*" + i + "=" + numberTableToPrint * i);
         }
     }
-    
-    public static void main(String[] args) {
-        MultiplicationTable t1 = new MultiplicationTable();
-        t1.printTable(6);
-    }
+ 
 
 }
