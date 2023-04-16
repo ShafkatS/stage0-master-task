@@ -14,9 +14,6 @@ public class IntegerDivider {
             System.out.println("division by zero");
         }
     }
-    public static void main(String[] args) {
-        IntegerDivider t4 = new IntegerDivider();
-        t4.printCompletelyDivided(10,0);
-    }
+ 
 
 }
