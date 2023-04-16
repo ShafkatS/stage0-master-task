@@ -17,9 +17,6 @@ public class SeasonDeterminer {
         }
         else System.out.println("Wrong month number");
     }
-    public static void main(String[] args) {
-        SeasonDeterminer s = new SeasonDeterminer();
-        s.tellSeason(10);
-    }
+
 
 }
