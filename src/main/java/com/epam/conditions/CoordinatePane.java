@@ -19,10 +19,7 @@ public class CoordinatePane {
             System.out.println("Zero");
     }
     
-    public static void main(String[] args) {
-        CoordinatePane c = new CoordinatePane();
-        c.printQuadrant(0,5);
-    }
+
 
 }
 
