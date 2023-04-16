@@ -39,7 +39,7 @@ public class ArrayTasks {
      * arr = [99, -7, 102], number = -7    ->   2 arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
-        for (int i = 0; i < arrays.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == number) {
                 return i;
             }
