@@ -7,11 +7,9 @@ package com.epam.algorithms;
  */
 public class ArrayTasks {
 
-    /**
-     * Return a String[] array that will list all the seasons of the year, starting with winter.
-     */
+   String[] seasonsArray = {"Spring", "Summer", "Fall", "Winter"};
     public String[] seasonsArray() {
-        return null;
+        return seasonsArray;
     }
 
     /**
@@ -26,15 +24,12 @@ public class ArrayTasks {
         return null;
     }
 
-    /**
-     * Find the sum of all elements of the int[] array.
-     * <p>
-     * Example:
-     * <p>
-     * arr = [1, 3, 5]   -> sum = 9 arr = [5, -3, -4] -> sum = -2
-     */
+    
     public int totalSum(int[] arr) {
-        return 0;
+        int sum2 = 0;
+        for (int i = 0; i < arr2.length; ++i)
+            sum2 += arr2[i];
+        return sum2;
     }
 
     /**
@@ -46,7 +41,12 @@ public class ArrayTasks {
      * arr = [99, -7, 102], number = -7    ->   2 arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
-        return 0;
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] == element) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     /**
@@ -58,7 +58,13 @@ public class ArrayTasks {
      * "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-        return null;
+        for (int i = 0, j = arrayName.length - 1; i < arrayName.length / 2; i++, j--)
+        {
+            String tmp = arrayName[i];
+            arrayName[i] = arrayName[j];
+            arrayName[j] = tmp;
+        }
+        return arrayName;
     }
 
     /**
@@ -70,7 +76,32 @@ public class ArrayTasks {
      * arr = [1,-2, 3]      -> [1, 3] arr = [-1, -2, -3]   -> [] arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-        return null;
+        int[] arr1 = {5, -2, 4, 10, -22, 35, -14, 45};
+        int pos = 0;
+        int neg = 0;
+        for (int x : arr1) {
+            if (x > 0) {
+                pos++;
+            } else {
+                neg++;
+            }
+        }
+
+        int[] arrpos = new int[pos];
+        int[] arrneg = new int[neg];
+
+        int countpos = 0;
+        int countneg = 0;
+        for (int x : arr1) {
+            if (x > 0) {
+                arrpos[countpos] = x;
+                countpos++;
+            } else {
+                arrneg[countneg] = x;
+                countneg++;
+            }
+        }
+        return arr1;
     }
 
     /**
