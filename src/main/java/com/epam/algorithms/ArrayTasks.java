@@ -6,10 +6,8 @@ package com.epam.algorithms;
  * The usage of any additional packages (such as java.util.*) is forbidden.
  */
 public class ArrayTasks {
-
-   String[] seasonsArray = {"Spring", "Summer", "Fall", "Winter"};
     public String[] seasonsArray() {
-        return seasonsArray;
+        return null;
     }
 
     /**
