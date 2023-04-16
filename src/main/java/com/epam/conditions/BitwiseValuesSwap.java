@@ -8,10 +8,6 @@ public class BitwiseValuesSwap {
         first=first^second;
         System.out.println(first + " " + second);
     }
-    
-    public static void main(String[] args) {
-        BitwiseValuesSwap b = new BitwiseValuesSwap();
-        b.swap(1,5);
-    }
+  
 
 }
