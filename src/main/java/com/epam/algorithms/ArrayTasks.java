@@ -24,10 +24,10 @@ public class ArrayTasks {
 
     
     public int totalSum(int[] arr) {
-        int sum2 = 0;
-        for (int i = 0; i < arr2.length; ++i)
-            sum2 += arr2[i];
-        return sum2;
+        int sum = 0;
+        for (int i = 0; i < arr.length; ++i)
+            sum += arr[i];
+        return sum;
     }
 
     /**
@@ -40,7 +40,7 @@ public class ArrayTasks {
      */
     public int findIndexOfNumber(int[] arr, int number) {
         for (int i = 0; i < arrays.length; i++) {
-            if (arrays[i] == element) {
+            if (arr[i] == number) {
                 return i;
             }
         }
@@ -56,13 +56,13 @@ public class ArrayTasks {
      * "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-        for (int i = 0, j = arrayName.length - 1; i < arrayName.length / 2; i++, j--)
+        for (int i = 0, j = arr.length - 1; i < arr.length / 2; i++, j--)
         {
-            String tmp = arrayName[i];
-            arrayName[i] = arrayName[j];
-            arrayName[j] = tmp;
+            String tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
         }
-        return arrayName;
+        return arr;
     }
 
     /**
@@ -74,10 +74,10 @@ public class ArrayTasks {
      * arr = [1,-2, 3]      -> [1, 3] arr = [-1, -2, -3]   -> [] arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-        int[] arr1 = {5, -2, 4, 10, -22, 35, -14, 45};
+        int[] arr = {5, -2, 4, 10, -22, 35, -14, 45};
         int pos = 0;
         int neg = 0;
-        for (int x : arr1) {
+        for (int x : arr) {
             if (x > 0) {
                 pos++;
             } else {
@@ -90,7 +90,7 @@ public class ArrayTasks {
 
         int countpos = 0;
         int countneg = 0;
-        for (int x : arr1) {
+        for (int x : arr) {
             if (x > 0) {
                 arrpos[countpos] = x;
                 countpos++;
@@ -99,7 +99,7 @@ public class ArrayTasks {
                 countneg++;
             }
         }
-        return arr1;
+        return arr;
     }
 
     /**
