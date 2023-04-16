@@ -48,6 +48,7 @@ public class ArrayTasks {
     }
     
     public int[] getOnlyPositiveNumbers(int[] arr){
+        return null;
     }
 
     /**
