@@ -3,7 +3,6 @@ package com.epam.conditions;
 public class SeasonDeterminer {
 
     public void tellTheSeason(int monthNumber) 
-        
         if (monthNumber == 1 || monthNumber ==2 || monthNumber ==12) {
             System.out.println("Winter");
         }
