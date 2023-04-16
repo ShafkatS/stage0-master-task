@@ -66,43 +66,6 @@ public class ArrayTasks {
     }
 
     /**
-     * Return new int[] array obtained from arr int[] array by choosing positive numbers only. P.S. 0 is not a positive
-     * number =)
-     * <p>
-     * Example:
-     * <p>
-     * arr = [1,-2, 3]      -> [1, 3] arr = [-1, -2, -3]   -> [] arr = [1, 2]         -> [1, 2]
-     */
-    public int[] getOnlyPositiveNumbers(int[] array) {
-        int[] array = {5, -2, 4, 10, -22, 35, -14, 45};
-        int pos = 0;
-        int neg = 0;
-        for (int x : array) {
-            if (x > 0) {
-                pos++;
-            } else {
-                neg++;
-            }
-        }
-
-        int[] arrpos = new int[pos];
-        int[] arrneg = new int[neg];
-
-        int countpos = 0;
-        int countneg = 0;
-        for (int x : array) {
-            if (x > 0) {
-                arrpos[countpos] = x;
-                countpos++;
-            } else {
-                arrneg[countneg] = x;
-                countneg++;
-            }
-        }
-        return arrpos;
-    }
-
-    /**
      * Return a sorted, ragged, two-dimensional int[][] array following these rules: Incoming one-dimensional arrays
      * must be arranged in ascending order of their length; numbers in all one-dimensional arrays must be in ascending
      * order.
