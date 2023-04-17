@@ -6,6 +6,8 @@ package com.epam.algorithms;
  * The usage of any additional packages (such as java.util.*) is forbidden.
  */
 public class ArrayTasks {
+    
+    
     public String[] seasonsArray() {
         return new String[]{"winter", "spring", "summer", "autumn"};
     }
@@ -53,24 +55,6 @@ public class ArrayTasks {
     }
     
     public int[] getOnlyPositiveNumbers(int[] arr){
-        String[] newArr = new String[arr.length];
-        int j = 0;
-        for (int i = arr.length-1; i >= 0 ; i--) {
-            newArr[j] = arr[i];
-            j++;
-        }
-        return newArr;
-    }
-
-    /**
-     * Return the new String[] array obtained from the arr array by reversing the order of the elements.
-     * <p>
-     * Example:
-     * <p>
-     * arr = ["Bob", "Nick"]               -> ["Nick", "Bob"] arr = ["pineapple", "apple", "pen"] -> ["pen", "apple",
-     * "pineapple"]
-     */
-    public String[] reverseArray(String[] arr) {
         int size = 0;
         for (int k : arr) {
             if (k > 0) {
@@ -87,6 +71,24 @@ public class ArrayTasks {
         }
 
         return positiveNumArr;
+    }
+
+    /**
+     * Return the new String[] array obtained from the arr array by reversing the order of the elements.
+     * <p>
+     * Example:
+     * <p>
+     * arr = ["Bob", "Nick"]               -> ["Nick", "Bob"] arr = ["pineapple", "apple", "pen"] -> ["pen", "apple",
+     * "pineapple"]
+     */
+    public String[] reverseArray(String[] arr) {
+        String[] newArr = new String[arr.length];
+        int j = 0;
+        for (int i = arr.length-1; i >= 0 ; i--) {
+            newArr[j] = arr[i];
+            j++;
+        }
+        return newArr;
     }
 
     /**
