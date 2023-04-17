@@ -4,12 +4,11 @@ public class NumberReverter {
     int value = 0;
 
     public void revert(int number) {
-        while (number != 0) {
-            int expected = number % 10;
-            value = value * 10 + expected;
-            number /= 10;
-        }
-        System.out.println(value);
+        int ones = number%10;
+        int tens = number/10%10;
+        int hundreds = number/100;
+        int revertedNum = ones*100+tens*10+hundreds;
+        System.out.println(revertedNum);
     }
 
 
